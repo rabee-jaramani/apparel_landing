@@ -54,13 +54,13 @@ const Section1 = () => {
         </h2>
         <div className="subscribe-btn">{t("Subscribe")}</div>
         <div className="video-responsive">
-          <video
+          {/* <video
             controls
             autostart="true"
             autoPlay
             src={video}
             type="video/mp4"
-          />
+          /> */}
         </div>
       </div>
     </section>
