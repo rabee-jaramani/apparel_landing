@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logo.webp";
-import video from "./video.mp4";
+// import video from "./video.mp4";
 import ksa from "./ksa.png";
 import usa from "./usa.png";
 import { useTranslation } from "react-i18next";
