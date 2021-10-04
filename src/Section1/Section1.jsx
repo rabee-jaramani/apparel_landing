@@ -24,14 +24,14 @@ const Section1 = () => {
         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a
             className="dropdown-item"
-            href="#"
+            href="/"
             onClick={() => i18next.changeLanguage("en")}
           >
             English <img src={usa} alt="" />
           </a>
           <a
             className="dropdown-item"
-            href="#"
+            href="/"
             onClick={() => i18next.changeLanguage("sa")}
           >
             العربية
