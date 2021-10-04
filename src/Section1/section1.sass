@@ -1,0 +1,104 @@
+.section1
+    background-color: rgb(9,45,90)
+    // height: 80vh !important
+.header
+    display: flex
+    padding-top: 10px
+    width: 100%
+    justify-content: space-around
+    align-content: center
+    .how-to-join-btn
+        align-self: center
+        padding: 10px
+        border: solid #F2E002 2px
+        // background-color: rgba(255, 255, 255, 0)
+        color: rgb(255, 255, 255)
+        border-radius: 5px
+        font-size: 1.2rem
+        cursor: pointer
+        &:hover
+            text-decoration: underline
+.logo
+    width: 100px
+    height: 100px
+    border-radius: 20px
+.header-message
+    max-width: 340px
+    text-align: center
+    margin-left: 50%
+    transform: translate(-50%)
+    margin-top: -50px
+    color: rgb(255, 255, 255)
+    .h1
+        font-size: 2rem
+    .h2
+        font-size: 1.2rem
+.hr
+    margin-bottom: 50px
+.soon
+    color: #F2E002
+    text-shadow: 1px 1px 5px #092E5A
+.about-us
+    font-size: 2.3rem
+    margin-bottom: 5px
+.subscribe-btn
+    font-size: 1.2rem
+    border-radius: 5px
+    cursor: pointer
+    background-color: #F2E002
+    padding: 10px
+    width: 130px
+    margin-left: 50%
+    transform: translate(-50%)
+    color: rgb(1, 1, 1)
+    &:hover
+        text-decoration: underline
+
+
+.video-responsive
+    position: relative
+    width: 50vw
+    margin-left: 50%
+    transform: translate(-50%)
+    z-index: -100
+    video
+        width: 100%
+        border: none
+        border-radius: 10px
+
+.fa-globe
+    font-size: 1.5rem
+.btn-secondary
+    background-color: transparent
+    border: none
+    color: rgb(242,224,2)
+@media ( max-width: 700px )
+    .section1
+        min-height: 80vh
+    .logo
+        width: 50px
+        height: 50px
+    .about-us
+        font-size: 2rem
+    .header-message
+        margin-top: 0px
+        .h1
+            font-size: 1.2rem
+        .h2
+            font-size: 1rem
+    .header
+        .how-to-join-btn
+            font-size: 1rem
+            cursor: pointer
+    .video-responsive
+        width: 95vw
+        margin-top: 0px
+            
+   
+@media only screen and (min-device-width:768px) and (max-device-width: 1024px)
+    .section1
+        background-image: url('../images/wall_ipad.webp')
+@media ( max-width: 500px )
+    .section1
+        background-attachment: scroll
+        background-position-y: bottom

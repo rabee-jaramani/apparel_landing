@@ -1,0 +1,66 @@
+.section2
+    position: relative
+    background-image: url('../images/section2.webp')
+    background-position: center
+    background-size: cover
+    
+.sec2-message
+    position: relative
+    margin-left: 20%
+    padding-top: 50px
+    h1
+        font-size: 2.5rem
+        color: white
+    .line
+        width: 100px
+        border-top: 2px #F2E002 solid
+    p
+        margin-top: 10px
+        font-size: 1.3rem
+        min-width: 280px
+        max-width: 600px
+        color: rgb(228, 228, 228)
+    .sec2-btn
+        z-index: 100
+        position: absolute
+        margin-top: 10px
+        margin-left: 50%
+        transform: translate(-52%)
+        font-size: 1.2rem
+        border-radius: 5px
+        cursor: pointer
+        background-color: #F2E002
+        padding: 10px
+        width: 130px
+        box-shadow: 2px 2px 20px black
+        &:hover
+            text-decoration: underline
+.bottom-msg
+    position: absolute
+    bottom: 200px
+    margin-left: 50%
+    transform: translate(-50%)
+    p
+        color: rgb(104, 104, 104)
+    h2
+        color: rgb(144, 144, 144)
+        width: 100%
+        text-align: center
+        font-size: 2rem
+
+
+@media ( max-width: 700px ) 
+    .section2
+        h2
+            margin-top: 150px
+    .sec2-message
+        margin-left: 10px
+        padding-top: 10px
+        h1
+            font-size: 1.2rem
+        
+    .bottom-msg
+        position: absolute
+        bottom: 50px
+        h2
+            font-size: 1.5rem
