@@ -6,8 +6,13 @@ import usa from "./usa.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const Section1 = () => {
-  const { t } = useTranslation();
+const handleLanguage=(lang)=>{
+  i18next.changeLanguage(lang)
+}
 
+
+
+  const { t } = useTranslation();
   return (
     <section className="section1">
       <div className="dropdown">
@@ -25,14 +30,14 @@ const Section1 = () => {
           <a
             className="dropdown-item"
             href="/"
-            onClick={() => i18next.changeLanguage("en")}
+            onClick={() => handleLanguage("en")}
           >
             English <img src={usa} alt="" />
           </a>
           <a
             className="dropdown-item"
             href="/"
-            onClick={() => i18next.changeLanguage("sa")}
+            onClick={() => handleLanguage('sa')}
           >
             العربية
             <img src={ksa} alt="" />
@@ -41,18 +46,18 @@ const Section1 = () => {
       </div>
       <div className="header">
         <img loading="lazy" className="logo" src={logo} alt="logo" />
-        <div className="how-to-join-btn">{t(`how to join btn`)}</div>
+        <div className="how-to-join-btn text">{t(`how to join btn`)}</div>
       </div>
       <div className="header-message">
-        <div className="about-us">{t(`about us`)}</div>
+        <div className="about-us text">{t(`about us`)}</div>
         <hr className="hr" />
-        <h1 className="h1">{t("Zero %")}</h1>
-        <h1 className="h1">{t("Commission")}</h1>
+        <h1 className="h1 text">{t("Zero %")}</h1>
+        <h1 className="h1 text">{t("Commission")}</h1>
         <h2 className="h2">
           {t("You will receive best service with")}{" "}
-          <span className="soon">{t("Soon")}</span>
+          <span className="soon text">{t("Soon")}</span>
         </h2>
-        <div className="subscribe-btn">{t("Subscribe")}</div>
+        <div className="subscribe-btn text">{t("Subscribe")}</div>
         <div className="video-responsive">
           <video
             controls
@@ -60,7 +65,7 @@ const Section1 = () => {
             autoPlay
             src={video}
             type="video/mp4"
-            muted='true'
+            muted={true}
           />
         </div>
       </div>

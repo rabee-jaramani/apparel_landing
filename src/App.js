@@ -24,7 +24,21 @@ i18n
           "Contact us btn":"Contact us",
           "Three Steps To Subscribe":"Three Steps To Subscribe",
           "Below are the three easy steps for receiving the newsletters":"Below are the three easy steps for receiving the newsletters",
-          "BINIFITS":"BINIFITS"
+          "BINIFITS":"BINIFITS",
+          "Subscribe with us":"Subscribe with us",
+          "Fill up the form below and provide all requested information.":"Fill up the form below and provide all requested information.",
+
+        "Process your request":"Process your request",
+        "We will add your email to our databse":"We will add your email to our databse",
+        "Receive Newsletters":"Receive Newsletters",
+        "Start receiving":"Start receiving the newsletters every day.",
+        "Subscribe Form":"Subscribe Form",
+        "Contact Us":"Contact Us",
+        "Email Address":"Email Address",
+"Phone":"Phone",
+"Message":"Message",
+"Submit":"Submit",
+"Name":"Name"
         
         },
       },
@@ -41,7 +55,30 @@ i18n
         "Contact us btn":"اتصل بنا",
         "Three Steps To Subscribe":"ثلاث خطوات للاشتراك",
         "Below are the three easy steps for receiving the newsletters":"فيما يلي ثلاث خطوات سهلة لتلقي الرسائل الإخبارية",
-"BINIFITS":"فوائد"
+"BINIFITS":"فوائد",
+"Subscribe with us":"اشترك معنا",
+"Fill up the form below and provide all requested information.":"املأ النموذج أدناه وقدم جميع المعلومات المطلوبة.",
+
+        "Process your request":"معالجة طلبك",
+        "We will add your email to our databse":"سنضيف بريدك الإلكتروني إلى قاعدة البيانات لدينا",
+        "Receive Newsletters":"تلقي الرسائل الإخبارية",
+        "Start receiving":"ابدأ في تلقي الرسائل الإخبارية كل يوم.",
+        "Subscribe Form":"نموذج الاشتراك",
+        "Contact Us":"اتصل بنا",
+        "Email Address":"عنوان البريد الإلكتروني",
+        "Phone":"هاتف",
+        "Message":"رسالة",
+        "Submit":"ارسال",
+        "Name":"الأسم",
+        "What We Do":"الذي نفعله",
+        "Our Services":"خدماتنا",
+        "Registration":"تسجيل",
+        "Quick Links":"روابط سريعة",
+        "Request A Quote":"اطلب اقتباس",
+        "Terms And Conditions":"الأحكام والشروط",
+        "Coming Soon On":"قريباً على", 
+        "All Rights Reserved 2021":"جميع الحقوق محفوظة 2021",
+
         },
       },
     },
@@ -53,11 +90,12 @@ i18n
       order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
       caches: ["cookie"],
     },
-    backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json",
-    },
+    // backend: {
+    //   loadPath: "/assets/locales/{{lng}}/translation.json",
+    // },
     react: { useSuspense: false },
   });
+
 function App() {
   return (
     <div className="App">

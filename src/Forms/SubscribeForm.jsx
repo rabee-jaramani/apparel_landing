@@ -1,26 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const SubscribeForm = () => {
+  const {t}=useTranslation()
+
   return (
     <form className="form-grid">
       <div className="form-item">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">{t("Name")}</label>
         <br />
         <input required id="name" placeholder="Mark"></input>
       </div>
-      {/* 
-            <div className='form-item'>
-                <label htmlFor='name'>Product Type</label><br/>
-                <input required id='product-type' placeholder='Electronics,fashion etc... '></input>
-            </div> */}
-
-      {/* <div className='form-item'>
-                <label htmlFor='name'>Location</label><br/>
-                <input required id='location' placeholder='Dubai'></input>
-            </div> */}
 
       <div className="form-item">
-        <label htmlFor="name">Contact Number</label>
+        <label htmlFor="name">{t("Phone")}</label>
         <br />
         <input
           type="tel"
@@ -32,7 +25,7 @@ const SubscribeForm = () => {
       </div>
 
       <div className="form-item">
-        <label htmlFor="name">Email Address</label>
+        <label htmlFor="name">{t("Email Address")}</label>
         <br />
         <input
           required
@@ -47,7 +40,7 @@ const SubscribeForm = () => {
                 <input required type="file" id='file' placeholder='Mark' ></input>
             </div> */}
       <div></div>
-      <button className="form-btn">Submit</button>
+      <button className="form-btn">{t("Submit")}</button>
     </form>
   );
 };

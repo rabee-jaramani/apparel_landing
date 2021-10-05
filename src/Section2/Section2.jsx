@@ -6,7 +6,7 @@ const Section2 = () => {
   return (
     <section className="section2">
       <div className="sec2-message">
-        <h1>{t("BINIFITS")}</h1>
+        <h1 className='text'>{t("BINIFITS")}</h1>
         <div className="line"></div>
         <p>
           {t("p1")}

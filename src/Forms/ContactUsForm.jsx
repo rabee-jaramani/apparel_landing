@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactUsForm = () => {
+  const {t}=useTranslation()
   return (
     <form className="form-flex">
       <div className="form-item">
-        <label htmlFor="name">Email Address</label>
+        <label htmlFor="name" className='text'>{t("Email Address")}</label>
         <br />
         <input
           required
@@ -14,7 +16,7 @@ const ContactUsForm = () => {
         ></input>
       </div>
       <div className="form-item">
-        <label htmlFor="name">Phone</label>
+        <label htmlFor="name" className='text'>{t("Phone")}</label>
         <br />
         <input
           type="tel"
@@ -26,7 +28,7 @@ const ContactUsForm = () => {
       </div>
 
       <div className="form-item">
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message" className='text'>{t("Message")}</label>
         <br />
         <textarea
           id="message"
@@ -37,7 +39,7 @@ const ContactUsForm = () => {
       </div>
 
       <div></div>
-      <button className="form-btn">Submit</button>
+      <button className="form-btn">{t("Submit")}</button>
     </form>
   );
 };
