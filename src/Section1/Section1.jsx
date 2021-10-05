@@ -60,6 +60,7 @@ const Section1 = () => {
             autoPlay
             src={video}
             type="video/mp4"
+            muted='true'
           />
         </div>
       </div>
