@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/logo.webp";
-// import video from "./video.mp4";
+import video from "./video.mp4";
 import ksa from "./ksa.png";
 import usa from "./usa.png";
 import { useTranslation } from "react-i18next";
@@ -54,13 +54,13 @@ const Section1 = () => {
         </h2>
         <div className="subscribe-btn">{t("Subscribe")}</div>
         <div className="video-responsive">
-          {/* <video
+          <video
             controls
             autostart="true"
             autoPlay
             src={video}
             type="video/mp4"
-          /> */}
+          />
         </div>
       </div>
     </section>
